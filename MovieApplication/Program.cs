@@ -13,8 +13,6 @@ public class Program
             Console.WriteLine("1) Search Movie");
             Console.WriteLine("2) Add Movie");
             Console.WriteLine("3) List Movies");
-            Console.WriteLine("4) Update Movie");
-            Console.WriteLine("5) Delete Movie");
             Console.Write("Enter your choice (-1 to exit): ");
             var input = Console.ReadLine();
             switch (input)
@@ -27,12 +25,6 @@ public class Program
                     break;
                 case "3":
                     ListMovie();
-                    break;
-                case "4":
-                    UpdateMovie();
-                    break;
-                case "5":
-                    DeleteMovie();
                     break;
                 case "-1":
                     continueLoop = false;
@@ -150,14 +142,6 @@ public class Program
                 Console.WriteLine();
             }
         }
-    }
-    private static void UpdateMovie()
-    {
-        throw new NotImplementedException();
-    }
-    private static void DeleteMovie()
-    {
-        throw new NotImplementedException();
     }
 
     private static void DisplayErrors(List<string> errors)
